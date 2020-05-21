@@ -1,0 +1,15 @@
+#main-area {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#main-area p{
+    text-indent: 100px;
+    text-align: justify;
+}
+
+#main-area img {
+    width: 499;
+    height: 286px;
+    margin-left: 30%;
+}

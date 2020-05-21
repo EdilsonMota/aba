@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" main="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/contactos-style.css">
+    <link rel="stylesheet" href="css/template.css">
+    <link rel="icon" href="img/logo.png">
+    <title>ABA</title>
+    <script type="text/javascript">
+        
+    function fieldRequired(field, msg) {
+     if (field.value == null || field.value == " ") {
+         alert(msg);
+         return false;
+    else
+        return true;
+     }
+             
+     function validateName(nome) {
+        for (var i = 0; i <= nome.value.length; i++)
+            if(isNaN(nome.value.charAt(i)) == false)
+                return false;
+            else
+                return true;
+}
+        
+    function validateEmail(email, msg) {
+        var atpos = email.value.indexOf("@");
+        var dotpos = email.value.lasIndexOf(".");
+        if (atpos < 1) || dotpos < atpos + 2 || dotpos + 2 >= email.value.length) {
+            alert (msg);
+            return false;
+        }
+        else 
+            return true;
+}        
+    function formValidate(form) {
+        with(form) {
+            if (fieldRequired(nome, "Preencha o campo nome!") == false) {
+                nome.focus();
+                return false;
+            }
+            else if (validateName(nome, "Erro Nome possui caracteres invalidos!") == false) {
+                    nome.focus();
+                    return false;
+            }
+                    
+            else if (fieldRequired(email, "Preencha o campo email!") == false) {
+                    email.focus();
+                    return false;
+            }
+                else if (fieldRequired(description, "Preencha o campo email!") == false) {
+                        email.focus();
+                        return false;
+                    }
+                    
+                    else if (validateEmail(email, "Email invalido!") == false) {
+                        email.focus();
+                        return false;
+                    }
+                    else 
+                        return true;
+        }
+}
+ }
+    </script>
+</head>
+<body>
+	<!-- HEADER -->
+    <div id="header">
+    	<!-- LOGO -->
+		<div id="logo">
+           <a href="index.html"><img src="img/logo.png"></a>
+        </div>
+       <!-- menu-->
+            <ul id="menu">
+                <li>
+                    <a href="index.html">HOME</a>
+                </li>
+                <li >
+                    <a href="galeria.html">GALERIA</a>
+                </li>
+                <li>
+                    <a href="programas.html">PROGRAMAS</a>
+                </li>
+                <li class="actual-pagina">
+                    <a href="contactos.html">CONTACTOS</a>
+                </li>
+                <li >
+                    <a href="acerca.html">ACERCA</a>
+                </li>
+                <li>
+                    <a href="defesa.html">DEFESA</a>
+                </li>
+            </ul>
+    </div>
+    <!-- container -->
+    <div id="container">
+        <!-- LOCALIZACAO -->
+        <div id="location">
+        	<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d126152.94998844863!2d13.2841045!3d-8.853532350000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-PT!2sao!4v1479474039247" frameborder="0" style="border:0" allowfullscreen>
+        	</iframe>
+        </div>
+        <!-- FORM -->
+        <form name="form" onsubmit="return formValidate(this)">
+            <p>Nome: <input type="text" name="nome" required></p>
+            <p>E-mail: <input type="text" name="email" required></p>
+            Mensagem <br>
+            <textarea rows="5" cols="50" name="descricao" required>
+            </textarea><br>
+            <input type="submit" value="Enviar" >
+        </form>
+          <!-- CONTACTOS -->
+        <div id="contactos">
+            <h3>Contactos:</h3>
+            <p>Telefone: +999 999 999 999</p>
+            <p>Email: <a href="mailto:suporte@aba.com">suporte@aba.com</a>
+            </p>
+        </div>
+        <div id="media">
+            <h3>Siga-nos:</h3>
+            <div>
+            <a href="www.facebook.com"><img src="img/facebook.jpg"></a>
+            <a href="www.instagram"><img src="img/instagram.jpg"></a>
+            <a href="www.twitter.com"><img src="img/Twitter.png"></a>
+            </div>
+        </div>
+    </div>
+    <!-- FOOTER -->
+   <div id="footer">
+        <span>&copy;Todos os Direitos Reservados. 2016</span>
+    </div>
+</body>
+</html>
