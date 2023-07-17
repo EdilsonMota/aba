@@ -10,7 +10,6 @@
 
 
 #quote-area {
-    
     width: 40%;
     color: white;
     padding-top: 100px;
@@ -62,6 +61,15 @@ section {
 
 article {
    flex: 1;
+}
+
+#quote-area {
+    width: 40%;
+    color: white;
+    padding-top: 100px;
+    font-weight: normal;
+    font-family: "Roboto-Light";
+    margin-left: auto;
 }
 
 }

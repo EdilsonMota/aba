@@ -4,20 +4,19 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1"> 
     <link rel="stylesheet" href="css/home-style.css">
-    <link rel="stylesheet" href="css/template.css">
+    <link rel="stylesheet" href="css/comum.css">
     <link rel="stylesheet" href="css/all.css">
     <link rel="icon" href="img/logo.png">
     <title>ABA</title>
 </head>
 <body>
+    <!-- 
     <header>
-    	
         <div id="logo">
            <a href="index.html">
                 <img src="img/logo.png" alt="Logo"/>
            </a>
         </div>
-        
         <ul id="menu">
             <li class="actual-pagina">
                 <a href="index.html">HOME</a>
@@ -34,22 +33,38 @@
             <li>
                 <a href="acerca.html">ACERCA</a>
             </li>
-            <li>
-                <a href="defesa.html">DEFESA</a>
-            </li>
         </ul>
     </header>
+    -->
+    <!-- NAV -->
+    <!-- BEGIN -->
+        <header class="top-nav">
+            <div id="logo">
+                <a href="index.html"><img src="img/logo.png" alt="Logo"/></a>
+            </div>
+            <input id="menu-toggle" type="checkbox" />
+            <label class='menu-button-container' for="menu-toggle">
+                <div class='menu-button'></div>
+            </label>
+            <ul class="menu">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="galeria.html">GALERIA</a></li>
+                <li><a href="programas.html">PROGRAMAS</a></li>
+                <li><a href="contactos.html">CONTACTOS</a></li>
+                <li><a href="acerca.html">ACERCA</a></li>
+            </ul>
+        </header>
+    <!-- END -->
+
     <main>
     	<!-- BILLBOARD -->
     	<div id="banner">
             <div id="quote-area">
                 <h1>
-                    <span>Talento</span><br>
-                    Sem pratica é nada...
-                </h1>
-                <h1>
+                    "<span>Talento</span><br>
+                    Sem pratica é nada...<br>
                     Nunca subestime o <span>poder</span> do <br>
-                    <span>Treino</span>
+                    <span>Treino</span>"
                 </h1>
                 <form>
                     <input class="button" type="button" value="Treine connosco">
