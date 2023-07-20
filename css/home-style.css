@@ -1,21 +1,21 @@
 /**************************************************************
-    Mobile
+    Comum
 **************************************************************/
 
 #banner{
+    display: flex;
+    flex-direction: row-reverse;
     background: url("../img/wallpaper_basket_pc.jpg") no-repeat center;     
     background-size: cover;
     height: 90vh;
 }
 
-
 #quote-area {
     width: 40%;
     color: white;
-    padding-top: 100px;
     font-weight: normal;
     font-family: "Roboto-Light";
-    margin-left: auto;
+    overflow: hidden;
 }
 
 #quote-area span{
