@@ -5,7 +5,7 @@
 #banner{
     display: flex;
     flex-direction: row-reverse;
-    background: url("../img/wallpaper_basket_pc.jpg") no-repeat center;     
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/wallpaper_basket_pc.jpg") no-repeat center;     
     background-size: cover;
     height: 90vh;
 }

@@ -38,6 +38,10 @@ body {
     overflow: auto;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 #container{
   display: grid;
   width: 100%;
@@ -77,17 +81,17 @@ body {
     Comum
 *****************************************************************/
 
-  /*HEADER
-    BEGIN
+  /*HEADER-BEGIN
   */
-    #logo > a > img{
-        max-height: 60px;
-        margin-left: 20px;
+    #logo > a{
+      display: flex;
+      align-items: center;
     }
-
-
-  /*HEADER
-    END
+    #logo > a > img{
+        width: 40px;
+        height: 40px;
+    }
+  /*HEADER-END
   */
 
   /*MAIN
@@ -170,11 +174,12 @@ body {
   .top-nav {
       grid-area: header;
       display: flex;
-      flex-direction: row;
-      background-color: #FFFFFF;
-      border-bottom: 2px solid var(--cor1);
-      height: 64px;
+      align-items: center;
+      background-color: var(--cor1);
+      height: 60px;
+      padding: 0px 20px;
       justify-content: space-between;
+      width: 100%;
     }
     
     .menu {
@@ -183,6 +188,8 @@ body {
       list-style-type: none;
       margin: 0;
       padding: 0;
+      background-color: var(--cor1);
+
     }
     
     .menu > li {
@@ -209,7 +216,7 @@ body {
     .menu-button::before,
     .menu-button::after {
       display: block;
-      background-color: #010101;
+      background-color: #ffffff;
       position: absolute;
       height: 4px;
       width: 30px;
@@ -249,12 +256,12 @@ body {
       .menu {
         position: absolute;
         top: 0;
-        margin-top: 64px;
+        margin-top: 60px;
         left: 0;
         flex-direction: column;
         width: 100%;
-        height: 100%;
         align-items: center;
+        background-color: var(--cor1);
       }
 
       #menu-toggle ~ .menu li {
@@ -268,7 +275,11 @@ body {
       #menu-toggle:checked ~ .menu li {
         height: 2.5em;
         padding: 0.5em;
-        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+        /*transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);*/
+      }
+
+      #menu-toggle:checked ~ .menu{
+        height: 100%;
       }
 
       .menu > li {
