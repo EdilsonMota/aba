@@ -4,40 +4,55 @@
 
 #banner{
     display: flex;
-    flex-direction: row-reverse;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/wallpaper_basket_pc.jpg") no-repeat center;     
+    flex-direction: column-reverse;
+    background: url("../img/wallpaper_basket_pc.jpg") no-repeat center;     
     background-size: cover;
     height: 90vh;
 }
 
 #quote-area {
-    width: 40%;
     color: white;
     font-weight: normal;
     font-family: "Roboto-Light";
+    padding-left: 20px;
     overflow: hidden;
+    padding-bottom: 50px;
+    background: rgba(0, 0, 0,.5);
 }
-
-#quote-area span{
-    font-weight: bold;
+#quote-area > h5, p {
+    margin-top: 0;
+}
+#quote-area > h5{
+    margin-bottom: 5px;
     font-size: 1.6em;
-    font-family: "Roboto-Bold";
+}
+#quote-area > p{ 
+    margin-bottom: 20px;
 }
 
 section {
     display: flex;
     flex-flow: column;
-    margin: 60px 0;
 }
 
 article {
     margin: 20px 40px;
-    padding: 10px;
-    border: 1px solid #ddd;
-    background-color: white;
-    border: 1px solid var(--color-light-gray);
+    background-color: rgba(255, 255, 255);
+    max-height: 373px;
+    max-width: 373px;
 }
-
+.article_espaco{
+    margin: 10px;
+}
+.font_pequena{
+    font-size: smaller;
+}
+.article_margin_texto{
+    margin: 0px 0px 4px 0px;
+}
+article:hover {
+    box-shadow: 2px 1px 23px 4px #D3D3D3;
+}
 article a img {
     width: 100%;
 }
@@ -52,25 +67,22 @@ article a img {
     Desktop
 **************************************************************/
 
-@media screen and (min-width:1200px){
+@media screen and (min-width: 700px){
+    #banner{
+        flex-direction: row-reverse;
+    }
 
-section {
-    padding: 0;
-}
-    
+    #quote-area {
+        margin-top: 90px;
+        background: none;
+        width: 40%;
+        background: none;
+    }
 
-article {
-   flex: 1;
-}
-
-#quote-area {
-    width: 40%;
-    color: white;
-    padding-top: 100px;
-    font-weight: normal;
-    font-family: "Roboto-Light";
-    margin-left: auto;
-}
-
+    section {
+        flex-flow: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
 }
 

@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/home-style.css">
     <link rel="stylesheet" href="css/comum.css">
     <link rel="stylesheet" href="css/all.css">
+    <link href="./fontawesome/css/all.css" rel="stylesheet">
     <link rel="icon" href="img/logo.png">
     <title>ABA</title>
 </head>
@@ -13,7 +14,6 @@
 <body>
     <div id="container">
         <!-- NAV -->
-        <!-- BEGIN -->
             <header class="top-nav">
                 <div id="logo">
                     <a href="index.html"><img src="img/logo.png" alt="Logo"/></a>
@@ -30,72 +30,87 @@
                     <li><a href="acerca.html">ACERCA</a></li>
                 </ul>
             </header>
-        <!-- NAV -->
-        <!-- END -->
-
         <!-- MAIN -->
-        <!-- BEGIN -->
             <main>
                 <!-- BILLBOARD -->
                 <div id="banner">
                     <div id="quote-area">
-                        <p>
-                            <span>Talento</span>
-                            Sem pratica é nada...Nunca subestime o <span>poder</span> do 
-                            <span>Treino</span>
-                        </p>
-                        <form>
-                            <input class="button" type="button" value="Treine connosco">
-                        </form>
+                        <h5>1. Alguma informação relevante</h5>
+                        <p>Detalhe da informação</p>
+                        <a class="ver-mais" href="#">Ver Mais</a>
                     </div>
                 </div>
+                <!-- SECGION -->
                 <section>
+                    <div class="titulo flex_ocupa_linha">
+                        <h1 class="titulo_texto">TíTULO DA SECÇÃO</h1>
+                        <div class="titulo_borda"></div>
+                    </div>
+                    <!-- 1.ARTICULE -->
                     <article>
                         <a href="index.html"><img src="img/gameplay (1).png"></a>
-                        <h3>
-                            Artigo 1
-                        </h3>
-                        <span>
-                            Torne-se certificado na Academia de Basquetebol Africana online. Ganha acesso um curso de 3 sessões para coach ou personel-trainer, o programa completo para seus jogarores ou time. 
-                        </span>
-                        <a href="index.html">Ler mais>></a>
+                        <div class="article_espaco">
+                            <h3 class="article_margin_texto">
+                                Artigo 1
+                            </h3>
+                            <p class="font_pequena article_margin_texto">
+                                Torne-se certificado na Academia de Basquetebol Africana online. Ganha acesso um curso de 3 sessões para coach ou personel-trainer, o programa completo para seus jogarores ou time. 
+                            </p>
+                            <a class="ver-mais texto_cor_preto" href="index.html">Ver Mais</a>
+                        </div>
                     </article>
+                    <!-- 2.ARTICULE -->
                     <article>
                         <a href="index.html"><img src="img/gameplay (2).png"> </a>
-                        <h3>
-                            Artigo 2
-                        </h3>
-                        <span>
-                            Multipos programas de treinos que fornecem o nivel mais alto de desenvolvimento.
-                            O sistema de traino inclui traino de habilidades em campo, programas de força e condionamento, programas nutricionais e condionamento mental. Programas abrangem os treinos da NBA e Pre-Draft da NBA, e treinos em time para verão e todo ano academico.
-                        </span>
-                        <a href="index.html">Ler mais>></a>
+                        <div class="article_espaco">
+                            <h3 class="article_margin_texto">
+                                Artigo 2
+                            </h3>
+                            <p class="font_pequena article_margin_texto">
+                                Torne-se certificado na Academia de Basquetebol Africana online. Ganha acesso um curso de 3 sessões para coach ou personel-trainer, o programa completo para seus jogarores ou time. 
+                            </p>
+                            <a class="ver-mais texto_cor_preto" href="index.html">Ver Mais</a>
+                        </div>
                     </article>
+                    <!-- 3.ARTICULE -->
                     <article>
                         <a href="index.html"><img src="img/gameplay (3).png"> </a>
-                        <h3>
-                            Artigo 3
-                        </h3>
-                        <span>
-                            Multipos programas de treinos que fornecem o nivel mais alto de desenvolvimento.
-                            O sistema de traino inclui traino de habilidades em campo, programas de força e condionamento, programas nutricionais e condionamento mental. Programas abrangem os treinos da NBA e Pre-Draft da NBA, e treinos em time para verão e todo ano academico.
-                        </span>
-                        <a href="index.html">Ler mais>></a>
+                        <div class="article_espaco">
+                            <h3 class="article_margin_texto">
+                                Artigo 3
+                            </h3>
+                            <p class="font_pequena article_margin_texto">
+                                Torne-se certificado na Academia de Basquetebol Africana online. Ganha acesso um curso de 3 sessões para coach ou personel-trainer, o programa completo para seus jogarores ou time. 
+                            </p>
+                            <a class="ver-mais texto_cor_preto" href="index.html">Ver Mais</a>
+                        </div>
                     </article>
                 </section>
+                <!-- SECGION -->
             </main>
-        <!-- MAIN -->
-        <!-- END -->
+        <!-- FOOTER -->
         <footer>
             <div>
                 <h3>
                     Fale Connosco
                 </h3>
                 <p>
-                    Disponível 24h por dia. Se tem dúvidas, sugestões ou reclamações, fale connosco.
+                    Entre em contacto para melhor esclarecimento.
                 </p>
                 <form>
-                    <input class="button" type="button" value="Enviar email">
+                    <div>
+                        <label for="nome">Nome</label>
+                        <input class="input_texto input_espaco" id="nome" type="text">
+                    </div>
+                    <div>
+                        <label for="email" required>Email</label>
+                        <input class="input_texto input_espaco" id="email" type="email">      
+                    </div>
+                    <div>
+                        <label for="mensagem" required>Messagem</label>
+                        <textarea class="input_texto input_espaco" id="mensagem" required></textarea>
+                    </div>
+                    <input class="button" type="button" value="Enviar">
                 </form>
             </div>
             <div>
@@ -103,10 +118,9 @@
                     Informações úteis
                 </h3>
                 <ul>
-                    <li> <a href="index.html">Link util</a> </li>
-                    <li> <a href="index.html">Link util</a> </li>
-                    <li> <a href="index.html">Link util</a> </li>
-                    <li> <a href="index.html">Link util</a> </li>
+                    <li > <a class="letra_branca font_pequena" href="index.html">O que é FIBA</a></li>
+                    <li> <a class="letra_branca font_pequena" href="index.html">Colaboração com NBA</a></li>
+                    <li> <a class="letra_branca font_pequena" href="index.html">Actuação em Africa</a> </li>
                 </ul>
             </div>
             <div>
@@ -115,17 +129,20 @@
                 </h3>
                 <ul>
                     <li> 
-                        <i class="fab fa-facebook-square fa-2x"></i>
+                        <a href="#"><img src="./img/fb.png">
+                        </a>
                     </li>
                     <li> 
-                        <i class="fab fa-youtube-square fa-2x"></i>
+                        <a href="#"> <img src="./img/instagram.png">
+                        </a>
                     </li>
                     <li> 
-                        <i class="fab fa-linkedin fa-2x"></i>
+                        <a href="#"> <img src="./img/tweeter.png">
+                        </a>
                     </li>
                 </ul>
             </div>
-            <p>&copy;Todos os Direitos Reservados. 2016</p>
+            <p class="texto_rodape">&copy;Todos os Direitos Reservados. 2016</p>
         </footer>
     </div>
 </body>

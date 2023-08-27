@@ -32,10 +32,15 @@
 
 body {
     margin:0;
+    padding: 0;
     width: 100%;
     font-family: "Roboto-Regular";
     /*overflow-x: hidden;*/
     overflow: auto;
+}
+
+a {
+  text-decoration: none;
 }
 
 * {
@@ -105,7 +110,6 @@ body {
 
     .button{
       border: 2px solid var(--cor2);
-      border-radius: 5px;
       font-weight: bold;
       padding: 8px 24px;
       color: inherit;
@@ -131,7 +135,7 @@ body {
       grid-gap: 10px;
       padding: 0px 10%;
       background-color: var(--cor3);
-      color: white;
+      color: var(--color-light-gray);
     }
 
     footer i{
@@ -149,19 +153,55 @@ body {
         padding: 4px;
     }
 
-    footer a{
-        text-decoration: none;
-        color:white;
-    }
-
-    footer p:last-child {
+.texto_rodape {
       border-top: 1px solid grey;
       text-align: center;
       padding-top: 16px;
     }
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+.input_texto{
+  width: 100%;
+}
+.input_espaco{
+  margin-bottom: 10px;
+}
   /*FOOTER
     END
   */
+
+.ver-mais{
+  border-bottom: var(--cor1) 3px solid;
+  padding-bottom: 2px;
+}
+.ver-mais:visited{
+  color: rgb(255, 255, 255);
+}
+.texto_cor_preto{
+  color: rgb(0, 0, 0) !important;
+}
+
+.titulo{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.titulo_texto{
+  text-align: center;
+}
+.titulo_borda{
+  background-color: var(--cor1);
+  width: 40px;
+  height: 2px;
+}
+
+.letra_branca{
+  color:rgb(255, 255, 255);
+}
 
 /*****************************************************************
     Mobile
@@ -181,7 +221,7 @@ body {
       justify-content: space-between;
       width: 100%;
     }
-    
+
     .menu {
       display: flex;
       flex-direction: row;
@@ -189,12 +229,17 @@ body {
       margin: 0;
       padding: 0;
       background-color: var(--cor1);
-
     }
     
     .menu > li {
       margin: 0 1rem;
       overflow: hidden;
+    }
+    .menu > li > a:visited{
+      color: rgb(255, 255, 255);
+    }
+    .menu > li > a{
+      color: rgb(255, 255, 255);
     }
     
     .menu-button-container {
@@ -307,17 +352,6 @@ body {
     Desktop
 *************************************************************/
 
- @media screen and (min-width:1200px){
-     
-header {
-    flex-flow: row;
-    height: 10vh;
-}
-
-#logo img{
-    max-height: 100%;
-}
-
 #menu {
     flex: 2;
     flex-flow: row;
@@ -333,12 +367,11 @@ header {
     color: var(--cor1);
 }
 
-footer{
-    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+@media screen and (min-width: 700px){
+  footer p:last-child {
+    grid-column-end: span 3;
+  }
+  .flex_ocupa_linha {
+    flex: 0 0 100%; /* This makes the item occupy the full row width */
+  }
 }
-
-footer p:last-child {
-   grid-column-end: span 3;
-}
-
-} 
