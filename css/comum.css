@@ -167,6 +167,7 @@ label {
 .input_texto{
   width: 100%;
 }
+
 .input_espaco{
   margin-bottom: 10px;
 }
@@ -174,11 +175,12 @@ label {
     END
   */
 
-.ver-mais{
+.article_link{
   border-bottom: var(--cor1) 3px solid;
   padding-bottom: 2px;
+  font-size: 12px;
 }
-.ver-mais:visited{
+.article_link:visited{
   color: rgb(255, 255, 255);
 }
 .texto_cor_preto{

@@ -7,9 +7,20 @@
     flex-direction: column-reverse;
     background: url("../img/wallpaper_basket_pc.jpg") no-repeat center;     
     background-size: cover;
-    height: 90vh;
+    height: calc(100vh - 60px);
 }
-
+.banner_link{
+    color: var(--color-light-gray);
+    border: var(--color-light-gray) 2px solid;
+    background: none;
+    border-radius: 7px;
+    padding: 6px 30px;
+    cursor: pointer;
+    font-size: 14px;
+}
+.banner_link:hover{
+    background: var(--cor3);
+}
 #quote-area {
     color: white;
     font-weight: normal;
@@ -32,30 +43,36 @@
 
 section {
     display: flex;
+    align-items: center;
     flex-flow: column;
+    margin-bottom: 50px;
 }
 
 article {
     margin: 20px 40px;
     background-color: rgba(255, 255, 255);
-    max-height: 373px;
-    max-width: 373px;
+    max-height: 380px;
+    max-width: 350px;
+    border-radius: 10px;
+    box-shadow: 2px 1px 23px 4px #D3D3D3;
+}
+article > a > img{
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+}
+.article_img_border_top {
+    border-radius: 10px 10px 0 0;
 }
 .article_espaco{
-    margin: 10px;
+    margin: 5px 10px 20px 10px;
 }
 .font_pequena{
     font-size: smaller;
 }
 .article_margin_texto{
-    margin: 0px 0px 4px 0px;
+    margin: 0 0 10px 0;
 }
-article:hover {
-    box-shadow: 2px 1px 23px 4px #D3D3D3;
-}
-article a img {
-    width: 100%;
-}
+
 
 /**************************************************************
     Mobile
