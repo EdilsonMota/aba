@@ -178,7 +178,7 @@ label {
   border-bottom: var(--cor1) 3px solid;
   padding-bottom: 2px;
 }
-.ver-mais:visited{
+.ver-mais:visited, .ver-mais:active, .ver-mais:link{
   color: rgb(255, 255, 255);
 }
 .texto_cor_preto{
@@ -359,10 +359,6 @@ label {
     margin: 30px 0 0 0;
 }
 
-.actual-pagina {
-    border-bottom: 5px solid var(--cor1);
-}
-
 #menu li a:hover{
     color: var(--cor1);
 }
@@ -371,7 +367,13 @@ label {
   footer p:last-child {
     grid-column-end: span 3;
   }
+
   .flex_ocupa_linha {
     flex: 0 0 100%; /* This makes the item occupy the full row width */
   }
+
+  .actual-pagina {
+    border-bottom: 5px solid var(--color-light-gray) !important;
+}
+
 }
