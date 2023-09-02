@@ -29,7 +29,9 @@
 /*****************************************************************
     Comum
 *****************************************************************/
-
+html {
+  scroll-behavior: smooth;
+}
 body {
     margin:0;
     padding: 0;
@@ -110,17 +112,18 @@ a {
 
     .button{
       border: 2px solid var(--cor2);
-      font-weight: bold;
       padding: 8px 24px;
       color: inherit;
-      transition: color 0.8s ;
       background-color: var(--cor1);
       transition: background-color 0.8s;
+      border-radius: 5px;
+      cursor: pointer;
     }
 
     .button:hover{
       background-color: rgb(40, 32, 30, .1);
     }
+
   /*MAIN
     END
   */
@@ -136,6 +139,10 @@ a {
       padding: 0px 10%;
       background-color: var(--cor3);
       color: var(--color-light-gray);
+    }
+
+    .grid_paddin_left{
+      padding-left: 20px;
     }
 
     footer i{
@@ -176,7 +183,6 @@ label {
   */
 
 .article_link{
-  border-bottom: var(--cor1) 3px solid;
   padding-bottom: 2px;
   font-size: 12px;
 }
@@ -203,6 +209,17 @@ label {
 
 .letra_branca{
   color:rgb(255, 255, 255);
+}
+
+#quote_area_texto_principal{
+  text-transform: uppercase;
+}
+
+#quote_area_texto_descritivo{
+  color: var(--color-light-gray);
+}
+
+.estilo_icone{
 }
 
 /*****************************************************************

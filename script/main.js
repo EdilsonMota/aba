@@ -1,6 +1,6 @@
 
 //Adicionar espaço entre hamburguer menu e o topo automaticamente
-// const height = document.getElementById("top-nav").getComputedStyle();
+// const height = document.getElementById("top_nav").getComputedStyle();
 // const menu = div.querySelector("#menu");
 // const menuPositino = window.getComputedStyle(div)["height"];
 
@@ -22,14 +22,14 @@ const textos = [{id: 0, principal: "Primeira informação", descritivo: "Detalhe
 , {id: 1, principal: "Segunda informação", descritivo: "Detalhe da segunda informação"}, 
 {id: 2, principal: "Terceira informação", descritivo: "Detalhe da terceira informação"}];
 
-document.getElementById("quote-area-texto-principal").innerText = textos[0].principal;
-document.getElementById("quote-area-texto-descritivo").innerText = textos[0].descritivo;
+document.getElementById("quote_area_texto_principal").innerText = textos[0].principal;
+document.getElementById("quote_area_texto_descritivo").innerText = textos[0].descritivo;
 
 let pointer = 0;
 
 function mudar_texto(index){
-    let texto_principal = document.getElementById("quote-area-texto-principal");
-    let texto_descritivo = document.getElementById("quote-area-texto-descritivo");
+    let texto_principal = document.getElementById("quote_area_texto_principal");
+    let texto_descritivo = document.getElementById("quote_area_texto_descritivo");
     texto_principal.innerText = textos[index].principal;
     texto_descritivo.innerText = textos[index].descritivo;
 }
