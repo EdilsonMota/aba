@@ -73,7 +73,28 @@ article > a > img{
     margin: 0 0 10px 0;
 }
 
+#texto_indicador_container{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    margin-top: 40px;
+    padding: 0px 35%;
+}
 
+.texto_progresso{
+    width: 15px;
+    height: 15px;
+    background-color: rgba(255, 255, 255,0);
+    border: 1px solid white;
+    border-radius: 100%;
+    transition: background-color 600ms;
+    cursor: pointer;
+}
+.texto_progresso_selecionado{
+    background-color: rgba(255, 255, 255,1);
+}
 /**************************************************************
     Mobile
 **************************************************************/
