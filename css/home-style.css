@@ -124,10 +124,19 @@ article {
     display: flex;
     flex-flow: row;
     flex-wrap: nowrap;
-    overflow-x: auto;
     white-space: nowrap;
     margin: 0px 20px;
+    overflow: auto;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
 }
+.programas_section::-webkit-scrollbar {
+    -webkit-appearance: none !important;
+    display: none;
+}
+
 
 /**************************************************************
     Desktop

@@ -235,8 +235,9 @@ label {
   background-size: cover;
   padding: 10px 14px 4px 10px;
   width: 350px;
+  min-width: 350px;
   height: 200px;
-  margin: 20px 10px;
+  margin: 20px 10px 50px 10px;
 }
 .programa_paragrafo{
   margin: 5px 0px;
@@ -251,6 +252,8 @@ label {
   margin-left: 2px;
   padding: 4px;
   background-color: white;
+  word-wrap: break-word;
+  white-space: normal;
 }
 
 
