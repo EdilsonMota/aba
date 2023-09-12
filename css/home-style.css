@@ -49,6 +49,7 @@ section {
 }
 
 article {
+    position: relative;
     margin: 20px 40px;
     background-color: rgba(255, 255, 255);
     max-height: 380px;
@@ -56,13 +57,12 @@ article {
     border-radius: 10px;
     box-shadow: 2px 1px 23px 4px #D3D3D3;
 }
-article > a > img{
+
+.article_img{
     border-radius: 10px 10px 0 0;
     width: 100%;
 }
-.article_img_border_top {
-    border-radius: 10px 10px 0 0;
-}
+
 .article_espaco{
     margin: 5px 10px 20px 10px;
 }
@@ -120,8 +120,14 @@ article > a > img{
 /**************************************************************
     Mobile
 **************************************************************/
-
-
+.programas_section{
+    display: flex;
+    flex-flow: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    white-space: nowrap;
+    margin: 0px 20px;
+}
 
 /**************************************************************
     Desktop

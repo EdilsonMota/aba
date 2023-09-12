@@ -183,8 +183,12 @@ label {
   */
 
 .article_link{
-  padding-bottom: 2px;
-  font-size: 12px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 .article_link:visited{
   color: rgb(255, 255, 255);
@@ -221,6 +225,34 @@ label {
 
 .estilo_icone{
 }
+
+.programa_container{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-image:  url("../img/gameplay (1).png");  
+  background-size: cover;
+  padding: 10px 14px 4px 10px;
+  width: 350px;
+  height: 200px;
+  margin: 20px 10px;
+}
+.programa_paragrafo{
+  margin: 5px 0px;
+}
+.programa_texto{
+  background-color: white;
+  padding: 4px;
+  margin-left: 2px;
+}
+.programa_texto_descricao{
+  margin: 0px;
+  margin-left: 2px;
+  padding: 4px;
+  background-color: white;
+}
+
 
 /*****************************************************************
     Mobile
