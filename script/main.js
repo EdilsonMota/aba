@@ -18,9 +18,10 @@
 
 // Animação para trocar texto
 
-const textos = [{id: 0, principal: "Primeira informação", descritivo: "Detalhe da primeira informação"}
-, {id: 1, principal: "Segunda informação", descritivo: "Detalhe da segunda informação"}, 
-{id: 2, principal: "Terceira informação", descritivo: "Detalhe da terceira informação"}];
+const textos = [
+{id: 0, principal: "Estrela do basquete renova contrato.", descritivo: "Mega estrela estende contrato por 5 anos."}
+,{id: 1, principal: "Recorde histórico: 70 pontos em jogo.", descritivo: "Jogador faz história com incríveis 70 pontos."}, 
+{id: 2, principal: "Final emocionante define campeão.", descritivo: "Duelo intenso termina com novo campeão."}];
 
 document.getElementById("quote_area_texto_principal").innerText = textos[0].principal;
 document.getElementById("quote_area_texto_descritivo").innerText = textos[0].descritivo;

@@ -3,6 +3,7 @@
 **************************************************************/
 
 #banner{
+    grid-area: b;
     display: flex;
     flex-direction: column-reverse;
     background: url("../img/wallpaper_basket_pc.jpg") rgb(0,0,0) no-repeat center;     
@@ -41,11 +42,26 @@
     margin-bottom: 20px;
 }
 
-section {
+.section_comum{
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    background-color: white !important; 
+    margin: 10px 14px;
+    padding: 0px 14px;
+}
+.section_comum_scroll{
+    overflow: hidden;
+}
+#section_noticias_container{
     display: flex;
     align-items: center;
     flex-flow: column;
-    margin-bottom: 50px;
 }
 
 article {
@@ -72,6 +88,9 @@ article {
 .article_margin_texto{
     margin: 0 0 10px 0;
 }
+.article_data{
+    color: var(--cor2);
+}
 
 #texto_indicador_container{
     display: flex;
@@ -94,6 +113,27 @@ article {
 }
 .texto_progresso_selecionado{
     background-color: rgba(255, 255, 255,1);
+}
+
+table{
+    border-spacing: 0;
+    margin: 20px;
+}
+.tb_row > th {
+    padding: 10px;
+}
+.tb_row > td{
+    border-top: var(--color-light-gray) 1px solid;
+    padding: 15px 5px;
+}
+.tb_row > th:first-child{
+    padding-right: 200px !important;
+}
+.tb_row > td:nth-child(n+2){
+    text-align: center;
+}
+.tb_row > tr:hover{
+    background-color: lightgrey;
 }
 
 .icon_link {
@@ -120,23 +160,27 @@ article {
 /**************************************************************
     Mobile
 **************************************************************/
-.programas_section{
+
+#section_container_programas{
     display: flex;
     flex-flow: row;
     flex-wrap: nowrap;
+    width: 100%;
+    overflow-x: scroll;
     white-space: nowrap;
-    margin: 0px 20px;
-    overflow: auto;
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
 }
-.programas_section::-webkit-scrollbar {
+
+#section_container_programas::-webkit-scrollbar {
     -webkit-appearance: none !important;
     display: none;
 }
 
+#section_patrocinio{
+    grid-area: p;
+}
+#section_container_patrocinio{
+
+}
 
 /**************************************************************
     Desktop
@@ -158,6 +202,10 @@ article {
         flex-flow: row;
         flex-wrap: wrap;
         justify-content: space-around;
+    }
+
+    #section_noticias_container{
+        flex-flow: row;
     }
 }
 
