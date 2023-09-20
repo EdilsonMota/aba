@@ -46,7 +46,6 @@
     display: flex;
     flex-flow: column;
     justify-content: flex-start;
-    align-items: center;
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
     -ms-overflow-style: none;  /* IE and Edge */
