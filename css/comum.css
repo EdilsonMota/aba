@@ -144,9 +144,6 @@ a {
   /*MAIN
     BEGIN
   */
-#section_resultados{
-  grid-area: r;
-}
 
   /*FOOTER
     BEGIN
@@ -225,6 +222,11 @@ label {
   margin: 0px 14px;
   color: var(--cor1);
   border-bottom: var(--cor2) solid 1px;
+}
+.titulo_2{
+  color: rgb(255, 255, 255) !important;
+  border-bottom: none !important;
+  justify-content: center;
 }
 .titulo_texto{
   text-align: center;
